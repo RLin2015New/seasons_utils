@@ -40,6 +40,7 @@ public class BaseServlet extends HttpServlet {
 	 * @time 2017上午10:16:21
 	 */
 	public boolean checkPdkSign(HttpServletRequest request) {
+		
 		Enumeration<String> names = request.getParameterNames();
 		List<String> array = new ArrayList<String>();
 		String checkCode = null;
